@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/fl"
+        android:text=" Fused Location"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl"
+        android:id="@+id/lat"
+        android:padding="8dp"
+        android:text="Latitude :"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl"
+        android:layout_toRightOf="@+id/lat"
+        android:id="@+id/latval"
+        android:padding="8dp"
+        android:textSize="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lat"
+        android:text="Longitude :"
+        android:padding="8dp"
+        android:id="@+id/lon"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latval"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/lon"
+        android:id="@+id/lonval"
+        android:padding="8dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lon"
+        android:id="@+id/map"
+        android:text="View in Map (Using Google Map Api)"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
